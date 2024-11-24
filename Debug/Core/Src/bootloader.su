@@ -1,0 +1,6 @@
+../Core/Src/bootloader.c:12:6:debugPrint	632	static
+../Core/Src/bootloader.c:39:17:round_up_u32	16	static
+../Core/Src/bootloader.c:48:6:firmware_update_log_hex	32	static
+../Core/Src/bootloader.c:57:6:firmware_update_commitStateFirmware	24	static
+../Core/Src/bootloader.c:71:6:firmware_update_checkHaveNewFimrware	16	static
+../Core/Src/bootloader.c:102:6:firmware_update_updateNewFirmware	40	static
