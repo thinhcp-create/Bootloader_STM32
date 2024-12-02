@@ -153,7 +153,6 @@ int main(void)
   		{
   			while (--retry)
   			{
-//  				HAL_GPIO_TogglePin(WDI_GPIO_Port, WDI_Pin);
   				if(firmware_update_updateNewFirmware())
   				{
   					debugPrint("update firmware success!\n");
@@ -187,24 +186,12 @@ int main(void)
       {
 		debugPrint("jump to app ... %d\n",i);
 		 HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-//		 HAL_GPIO_TogglePin(WDI_GPIO_Port, WDI_Pin);
 		 HAL_Delay(1000);
-//		 HAL_GPIO_TogglePin(WDI_GPIO_Port, WDI_Pin);
       }
 				cnt++;
 				break;
   }
-
-
-//  HAL_GPIO_WritePin(WDI_GPIO_Port, WDI_Pin, 1);
-//  HAL_Delay(5);
-//  HAL_GPIO_WritePin(WDI_GPIO_Port, WDI_Pin, 0);
-//  HAL_Delay(5);
-//  HAL_GPIO_WritePin(WDI_GPIO_Port, WDI_Pin, 1);
-  debugPrint("204");
   BootJumpToApplication(FLASH_ADDR_START_APPLICATION);
-
-
   debugPrint("After main, should never be reached.\n");
   /* USER CODE END 3 */
 }
