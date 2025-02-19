@@ -144,7 +144,7 @@ int main(void)
   htim3.Instance->CCR4 = 200;
   debugPrint("BOOTLOADER: Init done\r\n");
   debugPrint("BOOTLOADER: HW_VER: %d, FW_VER: %d\n", HW_VER_NUMBER, FIRM_VER);
-  uint16_t cnt = 0;
+//  uint16_t cnt = 0;
   debugPrint("Bootloader custom start!\n");
   HAL_Delay(100);
   volatile uint8_t retry = 4;
@@ -182,13 +182,13 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-	  for (int i = 0; i < 6; i++)
-      {
-		debugPrint("jump to app ... %d\n",i);
-//		 HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-		 HAL_Delay(1000);
-      }
-				cnt++;
+//	  for (int i = 0; i < 6; i++)
+//      {
+//		debugPrint("jump to app ... %d\n",i);
+////		 HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+//		 HAL_Delay(1000);
+//      }
+//				cnt++;
 				break;
   }
   BootJumpToApplication(FLASH_ADDR_START_APPLICATION);

@@ -1,6 +1,6 @@
 ../Core/Src/main.c:29:6:BootJumpToApplication	2
 ../Core/Src/main.c:102:6:SOFT_RESET	1
-../Core/Src/main.c:113:5:main	6
+../Core/Src/main.c:113:5:main	5
 ../Core/Src/main.c:203:6:SystemClock_Config	3
 ../Core/Src/main.c:243:13:MX_CRC_Init	2
 ../Core/Src/main.c:269:13:MX_TIM3_Init	6
