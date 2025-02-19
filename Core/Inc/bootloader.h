@@ -17,13 +17,13 @@
 		0x0803F000 luu info firmware update , page 126, page 127 reversed
 
 */
-#define FLASH_ADDR_FIRMWARE_UPDATE_DOWNLOAD 0x8023000
-#define FLASH_SIZE_FRIMWARE_UPDATE_AREA 0x19000
-#define FLASH_NUM_PAGE_FRIMWARE_UPDATE_AREA 50
+#define FLASH_ADDR_FIRMWARE_UPDATE_DOWNLOAD 0x8021800
+//#define FLASH_SIZE_FRIMWARE_UPDATE_AREA 0x19000
+//#define FLASH_NUM_PAGE_FRIMWARE_UPDATE_AREA 50
 
-#define FIRMWARE_BASE_ADDR_DOWNLOAD 0x8023000 //=FLASH_ADDR_FIRMWARE_UPDATE_DOWNLOAD
+#define FIRMWARE_BASE_ADDR_DOWNLOAD 0x8021800 //=FLASH_ADDR_FIRMWARE_UPDATE_DOWNLOAD
 
-#define FLASH_ADDR_START_APPLICATION 0x8008000		//vung flash sau softdevice (moi sdk size softdevice se khac nhau)
+#define FLASH_ADDR_START_APPLICATION 0x8005000		//vung flash sau softdevice (moi sdk size softdevice se khac nhau)
 #define FLASH_ADDR_FIRMWARE_UPDATE_INFO 0x0803F000				//vung flash luu config ve update firmware ma application ghi vao
 
 

@@ -23,7 +23,7 @@
 /* USER CODE BEGIN Includes */
 #include "bootloader.h"
 #include "stdio.h"
-#define ADDR_APP_PROGRAM 0x08008000
+#define ADDR_APP_PROGRAM 0x08005000
 #include "stm32f1xx_hal.h"
 
 void BootJumpToApplication(uint32_t appAddress)
@@ -185,7 +185,7 @@ int main(void)
 	  for (int i = 0; i < 6; i++)
       {
 		debugPrint("jump to app ... %d\n",i);
-		 HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+//		 HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
 		 HAL_Delay(1000);
       }
 				cnt++;
